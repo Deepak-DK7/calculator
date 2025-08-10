@@ -39,11 +39,12 @@ document.addEventListener('keydown', (e) => {
     else if(key == "Delete") {
         clearDisplay();
     }
-    else if(key ==+ "Enter"){
+    else if(key == "Enter"){
         e.preventDefault();
         calculate();
     }
 })
+
 
 
 
