@@ -32,18 +32,19 @@ document.addEventListener('keydown', (e) => {
     else if(["+", "-", "*", "/", "%"].includes(key)){
         appendToDisplay(key);
     }
+    else if(key === "Enter"){
+        e.preventDefault();
+        calculate();
+    }
     else  if(key === "Backspace"){
-        e.preventDefault;
+        e.preventDefault();
         delLast();
     }
     else if(key == "Delete") {
         clearDisplay();
     }
-    else if(key == "Enter"){
-        e.preventDefault();
-        calculate();
-    }
 })
+
 
 
 
