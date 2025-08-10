@@ -12,7 +12,7 @@ body{
     font-family:  Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
     font-size: 2em;
     border-radius: 11px;
-    border: 3px solid yellow;
+    border: 2.5px solid yellow;
     padding: 20px;
     height: auto;
     background: linear-gradient(red,purple, yellow);
@@ -40,17 +40,22 @@ button{
     width: auto;
     height: 50px;
     border: none;
-    font-size: 2rem;
+    outline: none;
+    font-size: 1.6rem;
     margin: 10px;
     border-radius: 5px;
-    background-color: hsl(217, 18%, 28%);
+    background-color: hsl(217, 35%, 25%);
     color: whitesmoke;
     cursor: pointer;
 }
 
 button:hover{
+    background-color: hsl(217, 40%, 35%);
     transition: 0.3s ease-out;
-    background-color: ;
     border: 2.5px solid chartreuse;
     color: gold;
+} 
+
+button:active{
+    background-color: hsl(200,50%,55%);
 }
