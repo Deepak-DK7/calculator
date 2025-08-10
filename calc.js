@@ -22,3 +22,14 @@ function del(){
 }
 
 
+document.addEventListener('keydown', (e) => {
+    if(e.key == "Delete") {
+        clearDisplay();
+    }
+    else if(e.key === "Enter"){
+        calculate();
+    } 
+})
+
+
+
