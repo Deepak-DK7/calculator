@@ -17,19 +17,34 @@ function calculate(){
     }
 }
 
-function del(){
+function delLast(){
     display.value = display.value.slice(0,-1);
 }
 
 
 document.addEventListener('keydown', (e) => {
-    if(e.key == "Delete") {
+
+    const key = e.key;
+
+    if(!isNaN(key) || key === "."){
+        appendToDisplay(key)
+    }
+    else if(["+", "-", "*", "/", "%"].includes(key)){
+        appendToDisplay(key);
+    }
+    else  if(key === "Backspace"){
+        e.preventDefault;
+        delLast();
+    }
+    else if(key == "Delete") {
         clearDisplay();
     }
-    else if(e.key === "Enter"){
-        calculate();
-    } 
+    else if(key == "Enter"){
+        e.preventDefault();
+        calculateEq();
+    }
 })
+
 
 
 
