@@ -41,9 +41,10 @@ document.addEventListener('keydown', (e) => {
     }
     else if(key ==+ "Enter"){
         e.preventDefault();
-        calculateEq();
+        calculate();
     }
 })
+
 
 
 
